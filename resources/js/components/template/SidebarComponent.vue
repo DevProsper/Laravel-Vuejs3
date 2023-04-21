@@ -10,10 +10,10 @@
                     <li class="menu-title" data-key="t-menu">Menu</li>
 
                     <li>
-                        <a href="index-2.html">
+                        <router-link :to="{ name: 'home.index' }">
                             <i data-feather="home"></i>
                             <span data-key="t-dashboard">Dashboard</span>
-                        </a>
+                        </router-link>
                     </li>
 
                     <li>
@@ -23,9 +23,9 @@
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
                             <li>
-                                <a href="apps-calendar.html">
-                                    <span data-key="t-calendar">Calendar</span>
-                                </a>
+                                <router-link :to="{ name: 'hour.index' }">
+                                    <span data-key="t-calendar">Business hour</span>
+                                </router-link>
                             </li>
 
                             <li>

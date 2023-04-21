@@ -1,7 +1,16 @@
 <template>
     <div>
         <top-bar></top-bar>
-        <router-view></router-view>
+        <side-bar></side-bar>
+        <right-bar></right-bar>
+
+        <div class="main-content">
+            <div class="page-content">
+                <div class="container-build">
+                    <router-view></router-view>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 

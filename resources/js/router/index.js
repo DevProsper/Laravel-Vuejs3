@@ -2,11 +2,20 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import HomeComponent from "../components/HomeComponent.vue";
 
-const routes = [{
-    path: '/laravel-vue-test',
-    component: HomeComponent,
-    name: 'home.index'
-}]
+import BusinessHourComponent from "../components/BusinessHourComponent.vue";
+
+const routes = [
+    {
+        path: '/',
+        component: HomeComponent,
+        name: 'home.index'
+    },
+    {
+        path: '/hour',
+        component: BusinessHourComponent,
+        name: 'hour.index'
+    }
+]
 
 export default createRouter({
     history: createWebHistory(),
